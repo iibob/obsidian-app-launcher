@@ -1,7 +1,7 @@
 {
 	"id": "app-launcher",
 	"name": "App Launcher",
-	"version": "1.0.5",
+	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "Launch sync tools, system apps, or mobile shortcuts directly from the ribbon to streamline your workflow.",
 	"author": "iibob",
@@ -9,6 +9,7 @@
 	"isDesktopOnly": false
 
 }
+
 
 
 
