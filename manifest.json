@@ -1,5 +1,5 @@
 {
-	"id": "obsidian-app-launcher",
+	"id": "app-launcher",
 	"name": "App Launcher",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
@@ -7,4 +7,5 @@
 	"author": "iibob",
 	"authorUrl": "https://github.com/iibob",
 	"isDesktopOnly": false
+
 }
