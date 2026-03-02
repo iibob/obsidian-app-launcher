@@ -1,33 +1,27 @@
-name: Release Obsidian plugin
+name: Release Obsidian Plugin
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # 手动触发，无需输入任何内容
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Use Node.js
-        uses: actions/setup-node@v3
+      - name: Get version
+        id: get_version
+        run: |
+          VERSION=$(node -e "console.log(require('./manifest.json').version)")
+          echo "tag_name=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
         with:
-          node-version: "18.x"
-
-      - name: Build plugin
-        run: |
-          npm install
-          npm run build
-
-      - name: Create release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          tag="${GITHUB_REF#refs/tags/}"
-
-          gh release create "$tag" \
-            --title="$tag" \
-            --draft \
-            main.js manifest.json styles.css
+          tag_name: ${{ steps.get_version.outputs.tag_name }}
+          name: v${{ steps.get_version.outputs.tag_name }}
+          files: |
+            main.js
+            manifest.json
+            styles.css
