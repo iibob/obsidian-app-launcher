@@ -1,7 +1,7 @@
 name: Release Obsidian Plugin
 
 on:
-  workflow_dispatch: # 手动触发，无需输入任何内容
+  workflow_dispatch:
 
 jobs:
   build:
