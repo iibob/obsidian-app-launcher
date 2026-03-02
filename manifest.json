@@ -3,7 +3,7 @@
 	"name": "App Launcher",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Quickly launch specified applications on desktop and mobile, ideal for sync tools, shortcuts, and more.",
+	"description": "Launch sync tools, system apps, or mobile shortcuts directly from the Obsidian ribbon to streamline your workflow.",
 	"author": "iibob",
 	"authorUrl": "https://github.com/iibob",
 	"isDesktopOnly": false
