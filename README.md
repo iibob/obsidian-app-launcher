@@ -3,7 +3,7 @@
 
 
 <a name="english"></a>
-A productivity plugin for Obsidian that adds a "Rocket" icon to the ribbon. Launch any specified application or automation with a single click.
+A productivity plugin for [Obsidian](https://obsidian.md/) that adds a "Rocket" icon to the ribbon. Launch any specified application or automation with a single click.
 
 ## 💡 Use Cases
 
@@ -32,7 +32,7 @@ A productivity plugin for Obsidian that adds a "Rocket" icon to the ribbon. Laun
 <a name="chinese"></a>
 # 应用启动器
 
-一款专为 Obsidian 打造的效率插件。实现在侧边栏添加一个“火箭”图标，通过点击该图标，启动指定应用程序。
+一款专为 [Obsidian](https://obsidian.md/) 打造的效率插件。实现在侧边栏添加一个“火箭”图标，通过点击该图标，启动指定应用程序。
 
 
 ## 💡 使用场景
